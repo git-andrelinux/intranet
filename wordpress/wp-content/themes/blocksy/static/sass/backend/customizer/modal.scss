@@ -1,0 +1,60 @@
+.wp-customizer [data-reach-dialog-overlay] {
+	z-index: 999999;
+	--modal-left: 0;
+}
+
+.ct-reset-options {
+	--modal-width: 450px;
+	--modal-min-height: 200px;
+	text-align: center;
+
+	.close-button {
+		display: none;
+	}
+
+	.ct-modal-actions {
+
+		button {
+			display: inline-flex;
+			align-items: center;
+			height: 40px;
+			padding: 0 25px;
+			margin: 0 10px;
+			appearance: none;
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 0.01em;
+			border-radius: 4px;
+			border: 1px solid;
+			transition: all 0.2s ease;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.ct-button {
+			color: rgba(46, 68, 83, 0.8);
+			border-color: #e2e6eb;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+
+			&:hover {
+				color: #2e4453;
+				border-color: rgba(190, 196, 203, 1);
+			}
+		}
+
+		.ct-button-primary {
+			color: #fff;
+			background: #0085ba;
+			border-color: rgba(1, 118, 165, 0.6);
+			box-shadow: 0 1px 4px rgba(1, 96, 134, 0.4);
+
+			&:hover {
+				background: #039CD8;
+				border-color: rgba(1, 118, 165, 1);
+			}
+		}
+	}
+}

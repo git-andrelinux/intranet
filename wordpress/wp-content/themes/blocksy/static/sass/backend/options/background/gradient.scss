@@ -1,0 +1,118 @@
+.ct-gradient-tab {
+
+	.components-circular-option-picker {
+		margin: 0;
+		padding: 20px 14px 15px 14px;
+		box-sizing: border-box;
+	}
+
+	.components-custom-gradient-picker {
+		margin-top: 0;
+	}
+
+	// gradient bar
+	.components-custom-gradient-picker__gradient-bar {
+		box-sizing: border-box;
+	}
+
+	.components-custom-gradient-picker__ui-line {
+		margin: 0 -14px;
+		margin-top: 20px;
+		padding: 20px 14px 0 14px;
+		border-top: 1px dashed #eee;
+	}
+
+
+	// gradient options
+	.components-custom-gradient-picker__type-picker > div {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.components-circular-option-picker__custom-clear-wrapper {
+		display: none;
+	}
+
+	
+	// angle
+	.components-angle-picker-control__angle-circle {
+		margin-right: 6px;
+	}
+
+	.components-angle-picker-control__input-field {
+		--width: calc(100% - 38px);
+		--margin: 1px 0 0 0;
+	}
+
+
+	// popover
+	.components-popover {
+		position: relative;
+		z-index: initial;
+		left: initial !important;
+		top: 8px !important;
+		animation: none !important;
+
+		.components-popover__content {
+			z-index: 2;
+			left: 0;
+			min-width: initial;
+			width: 295px;
+			margin-left: -17px !important;
+
+
+			border-radius: 0;
+			box-shadow: none;
+			border: none;
+
+			> div {
+				padding: 0;
+			}
+		}
+	}
+}
+
+// swatches
+.ct-gradient-swatches {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	padding: 15px 14px;
+	margin: 0;
+	border-top: 1px dashed #eee;
+
+	li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 28px;
+		height: 28px;
+		margin: 0;
+		cursor: pointer;
+		border-radius: 100%;
+		box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+		background-image: var(--background-image);
+		transition: box-shadow .1s ease;
+
+		&.active {
+			position: relative;
+			box-shadow: inset 0 0 0 1px rgba(0,0,0,.1),
+						0 0 0 2px #fff,
+						0 0 0 4px #606a73;
+
+			&:before {
+				margin-top: 1px;
+				position: absolute;
+				content: "\f15e";
+				font-family: 'dashicons';
+				font-size: 20px;
+				color: #fff;
+				text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+			}
+		}
+	}
+}
